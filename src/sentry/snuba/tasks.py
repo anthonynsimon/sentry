@@ -8,9 +8,9 @@ from sentry.tasks.base import instrumented_task
 from sentry.utils import metrics
 from sentry.utils.snuba import (
     _snuba_pool,
+    Dataset,
     SnubaError,
     resolve_snuba_aliases,
-    Dataset,
     resolve_column,
 )
 
