@@ -11,10 +11,10 @@ from six import add_metaclass
 
 from sentry.snuba.models import QueryDatasets, QuerySubscription, SnubaQuery
 from sentry.snuba.tasks import (
+    build_snuba_filter,
     create_subscription_in_snuba,
     update_subscription_in_snuba,
     delete_subscription_from_snuba,
-    build_snuba_filter,
 )
 from sentry.testutils import TestCase
 
